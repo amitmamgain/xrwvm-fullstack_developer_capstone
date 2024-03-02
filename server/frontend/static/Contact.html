@@ -1,0 +1,122 @@
+<html>
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    /* Add custom CSS here */
+    .container {
+      width: 80%;
+      margin: auto;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid #ccc; /* Adding border around the big container */
+      padding: 20px; /* Adding padding for better appearance */
+    }
+    .top-image {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    .bottom-container {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      justify-content: space-between;
+      margin-top: 20px; /* Adjust as needed */
+      border-top: 2px solid #ccc; /* Adding border line */
+      border-bottom: 2px solid #ccc; /* Adding border line */
+      padding: 20px 0; /* Adding padding for better appearance */
+    }
+    .left-column {
+      width: 50%; /* Adjust to 50% for left column */
+    }
+    .right-column {
+      width: 50%; /* Adjust to 50% for right column */
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 100%;
+      margin-bottom: 20px; /* Adjust as needed */
+      padding: 10px; /* Adding padding for better appearance */
+      color: blue; /* Setting text color to blue */
+    }
+    .title {
+      border: none; /* Remove border for titles */
+    }
+    .vertical-line {
+      border-left: 2px solid black; /* Adding vertical line separator */
+      height: 100%; /* Setting height to match container */
+    }
+  </style>
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <img class="top-image" src="/static/car_dealership.jpg" alt="Banner image">
+    <div class="bottom-container">
+      <div class="left-column">
+        <!-- Left column content here -->
+        <img src="/static/customer_service.png" alt="Left image">
+      </div>
+      <div class="vertical-line"></div> <!-- Vertical line separator -->
+      <div class="right-column">
+        <!-- Right column content here -->
+        <div class="card-container">
+          <div class="card">
+            <div class="card-body">
+              <p class="title">555-555-5555</p>
+              <p class="card-text">Customer service available Mon-Fri 8am to 8pm MST.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <p class="title">email@bestcars.com</p>
+              <p class="card-text">You can expect a reply within 1 business day.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <p class="title">HQ Address</p>
+              <p>13 Elmer Drive, Utah 225511</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
